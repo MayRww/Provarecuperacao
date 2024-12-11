@@ -1,0 +1,34 @@
+GET  http://localhost:5026
+
+### Cadastrar Aluno
+POST http://localhost:5026/cadastrarAluno
+Content-Type: application/json
+
+{
+  "Aluno": "joão",
+  "id": "1"
+
+}
+
+### Cadastrar IMC
+POST http://localhost:5026/cadastrarIMC
+Content-Type: application/json
+
+{
+  "Aluno": "joão",
+  "id": "1",
+  "IMC": "20,3"
+}
+
+### listar IMC por Aluno
+GET http://localhost:5026/listarIMCALuno
+
+### Alterar IMC
+PUT  http://localhost:5026/alterarIMCALuno/imc/1
+Content-Type: application/json
+
+{
+  "Nome": "joão",
+  "IMC":    24
+}
+

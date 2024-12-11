@@ -30,7 +30,7 @@ app.MapPut("/imc/{aluno}", async (string Nome, IMC iMCAtualizado, Maiara.db cont
     }
 
     IMC.Nome = iMCAtualizadoAtualizado.Nome;
-    IMC.decimaç = IMCAtualizado.decimal;
+    IMC.decimal = IMCAtualizado.decimal;
     await context.SaveChangesAsync();
     return Results.Ok("IMC atualizado com sucesso.");
 });
